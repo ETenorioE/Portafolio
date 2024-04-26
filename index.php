@@ -7,6 +7,7 @@
     <title>Portafolio - Eduardo Brian Tenorio Quispe</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
 </head>
 
@@ -30,8 +31,8 @@
                         <h2>E <span>T</span></h2>
                     </div>
                     <ul class="menu">
-                        <li><a class="active" href="#">Home</a></li>
-                        <li><a href="#">hola</a></li>
+                        <li><a class="active" href="#">Sobre mi</a></li>
+                        <li><a href="#">Proyectos</a></li>
                         <li><a href="#">hola</a></li>
                         <li><a href="#">hola</a></li>
                     </ul>
@@ -58,6 +59,13 @@
 
                         <button class="btn-copy" type="button" title="copiar" onclick="mostrar_sms_email()"><i class="fa-solid fa-copy"></i> </button>
                         <div id="copiedMessage" class="copied-message">¡Copiado! 😎</div>
+                    </div>
+
+                    <div class="social">
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/eduardo-tenor/" target="_blank" title="eduardo-tenor"><i class="bi bi-linkedin"></i></a></li>
+                            <li><a href="https://github.com/ETenorioE" target="_blank" title="ETenorioE"><i class="bi bi-github"></i></a></li>
+                        </ul>
                     </div>
                 </div>
                 <img src="assets/img/foto.jpg" alt="Eduardo Brian Tenorio Quispe imagen">

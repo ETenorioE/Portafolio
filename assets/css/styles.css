@@ -5,6 +5,9 @@
     --fondo: #081B29;
     --blanco: #fff;
     --letra: #00ACF0;
+    --burbuja1: #4fC3DC;
+    --burbuja2: #FF2D75;
+
 }
 
 * {
@@ -38,17 +41,17 @@ body {
     position: relative;
     width: 30px;
     height: 23px;
-    background: #4fc3dc;
+    background: var(--burbuja1);
     margin: 0 4px;
     border-radius: 50%;
-    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px var(--burbuja1), 0 0 100px var(--burbuja1);
     animation: animate 15s linear infinite;
     animation-duration: calc(125s / var(--i));
 }
 
 .burbuja span:nth-child(even) {
-    background: #ff2d75;
-    box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+    background: var(--burbuja2);
+    box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px var(--burbuja2), 0 0 100px var(--burbuja2);
 }
 
 @keyframes animate {
@@ -193,4 +196,27 @@ span {
     padding: 10px 20px;
     border-radius: 5px;
     display: none;
+}
+
+.social {
+    margin-top: 10px;
+}
+
+.social ul li {
+
+    display: inline-block;
+}
+
+.social ul li a {
+    color: var(--blanco);
+    font-size: 30px;
+    padding: 5px 5px;
+    transition: all .5s ease-in-out;
+    display: block;
+}
+
+.social ul li a:hover {
+    cursor: pointer;
+    color: var(--burbuja1);
+    transform: scale(1.3);
 }
